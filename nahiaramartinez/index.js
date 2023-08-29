@@ -1,10 +1,10 @@
-const numbers = [1, 2, 3, 4, 5];
+/*const numbers = [1, 2, 3, 4, 5];
 numbers[0] = 10;
 numbers[2] = 30;
 console.log(numbers);
 
-/* [10, 2, 30, 4, 5] lo que pasa con esto esque lo que yo pondo adentro del corchete el numero que 
-yo quiero cambiar*/
+[10, 2, 30, 4, 5] lo que pasa con esto esque lo que yo pondo adentro del corchete el numero que 
+yo quiero cambiar
 
 let numero = [1, 2, 3, 4];
 
@@ -45,3 +45,49 @@ function ordenarValoresAbsoluto(numbers) {
   });
 }
 console.log(ordenarValoresAbsoluto(numero));
+
+*/
+//actividad 6
+/*const words = [
+  "hola",
+  "tres",
+  "uno",
+  "Universidad",
+  "de",
+  "Buenos Aires",
+  "pepito",
+  "celular",
+];
+
+const word = "pepito";
+
+let palabraLargas = [];
+function buscaPalabras(words, word) {
+  const posicionPalabra = words.indexOf(word);
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > posicionPalabra) {
+      palabraLargas.push(words[i]);
+    }
+  }
+  return palabraLargas;
+}
+console.log(buscaPalabras(words, word));
+*/
+
+function createObject(name, subs) {
+  const obj = {
+    name,
+    subs,
+    hash: name.length * subs,
+    getStatus: function () {
+      //manera larga -> console.log("el canal ", nombre, " tiene", subs)
+      return `el canal ${name} tiene ${subs}`; // -> abreviado
+    },
+  };
+  return obj;
+}
+const persona = createObject("cuchara", 2);
+/*const hashUsuario = persona.hash;
+
+console.log(hashUsuario);
+*/
