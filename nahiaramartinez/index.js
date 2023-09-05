@@ -89,5 +89,15 @@ function createObject(name, subs) {
 const persona = createObject("cuchara", 2);
 /*const hashUsuario = persona.hash;
 
-console.log(hashUsuario);
+console.log(hashUsuario); 
+es para que no salga el personas.
+*/
+/*
+objetos 2:
+1- ¿Qué se imprimirá en la consola al ejecutar el siguiente código? y por que? 
+saca lo que tiene persona y despues imprime el peso y la altura.
+2- ¿Qué se imprimirá en la consola al ejecutar el siguiente código? Y por que?
+salta error porque esta mal escrito y se pisan entre si.
+3- ¿Cómo se llama el atajo que nos permite recuperar el valor de una propiedad de un objeto?
+el nombre del atajo llama "Destructuracion"
 */
