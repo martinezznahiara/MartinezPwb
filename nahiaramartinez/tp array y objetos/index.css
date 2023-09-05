@@ -1,0 +1,48 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  grid-template-rows: auto;
+  list-style-type: none;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: gray;
+}
+
+body {
+  background-color: rgb(73, 2, 2);
+}
+
+button {
+  background-color: gray;
+}
+
+img {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+ul li {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
