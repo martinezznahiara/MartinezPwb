@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "../App.css";
 import { useEffect } from "react";
 
 export function Characters() {
@@ -9,15 +9,24 @@ export function Characters() {
       .then((response) => response.json())
       .then((data) => setCharacter(data.results));
   }, []);
-
   return (
-    <ul>
+    <ul className="completo">
       {character.map((item, index) => (
-        <li key={index}>
-          <h3>{item.name}</h3>
-          <p>{item.status}</p>
-          <img src={item.image} />
-        </li>
+        <div className="personajes" key={index}>
+          <div className="img">
+            <img src={item.image}></img>
+          </div>
+          <div className="info">
+            <h3>{item.name}</h3>
+            <p>
+              {item.status} - {item.species}
+            </p>
+            <p>Last known location:</p>
+            <h3>{item.location.name}</h3>
+            <p>First seen in:</p>
+            <h3>{}</h3>
+          </div>
+        </div>
       ))}
     </ul>
   );
