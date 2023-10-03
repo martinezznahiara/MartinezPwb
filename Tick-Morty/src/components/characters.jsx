@@ -1,21 +1,20 @@
 import { useState } from "react";
 import "../App.css";
 import { useEffect } from "react";
+import { useCharacter } from "../hooks/useCharacter";
 
-export function Characters() {
-  const [character, setCharacter] = useState([]);
+export const Characters = () => {
+  const { getAllCharacters, character } = useCharacter();
+
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((response) => response.json())
-      .then((data) => setCharacter(data.results));
+    getAllCharacters();
   }, []);
   return (
     <ul className="completo">
       {character.map((item, index) => (
-        <div className="personajes" key={index}>
-          <div className="img">
-            <img src={item.image}></img>
-          </div>
+        <div className="cajagris" key={index}>
+          <img src={item.image}></img>
+
           <div className="info">
             <h3>{item.name}</h3>
             <p>
@@ -30,4 +29,4 @@ export function Characters() {
       ))}
     </ul>
   );
-}
+};
