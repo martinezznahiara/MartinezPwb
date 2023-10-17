@@ -3,13 +3,19 @@ function Header() {
     <header>
       <div className="botonesylogo">
         <div className="botones">
-          <button className="dous_about">Docs</button>
-          <button className="dous_about">About</button>
-          <button className="support">SUPORT US</button>
+          <a className="dous" href="https://rickandmortyapi.com/documentation">
+            Docs
+          </a>
+          <a className="dous_about" href="https://rickandmortyapi.com/about">
+            about
+          </a>
+          <a className="support" href="https://rickandmortyapi.com/support-us/">
+            Support us
+          </a>
         </div>
-        <div className=" titulo">
-          <h1> The Rick and Morty API</h1>
-        </div>
+      </div>
+      <div className="titulo">
+        <h1> The Rick and Morty API</h1>
       </div>
     </header>
   );
