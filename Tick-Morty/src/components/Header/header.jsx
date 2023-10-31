@@ -1,3 +1,4 @@
+import { Svgfondo } from "../utilidades/svgfondo";
 function Header() {
   return (
     <header>
@@ -16,6 +17,9 @@ function Header() {
       </div>
       <div className="titulo">
         <h1> The Rick and Morty API</h1>
+      </div>
+      <div className="fondo">
+        <Svgfondo />
       </div>
     </header>
   );

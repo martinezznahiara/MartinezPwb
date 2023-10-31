@@ -132,3 +132,50 @@ a {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 152, 0);
 }
+
+.status_icon {
+  display: flex;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375;
+  border-radius: 50%;
+}
+
+.vivo {
+  background-color: rgb(83, 201, 59);
+}
+.muerto {
+  background-color: rgb(211, 28, 28);
+}
+
+.desaparecido {
+  background-color: rgb(163, 159, 159);
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fondo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rickAndMorty {
+  fill: rgb(245, 245, 245);
+  position: absolute;
+  bottom: 100%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
+  font-size: 300%;
+}

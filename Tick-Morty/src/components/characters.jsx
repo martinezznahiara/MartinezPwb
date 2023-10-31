@@ -6,6 +6,17 @@ import { useCharacter } from "../hooks/useCharacter";
 export const Characters = () => {
   const { getAllCharacters, character } = useCharacter();
 
+  const getStatusColor = (status) => {
+    if (status === "Alive") {
+      return "vivo";
+    }
+    if (status === "Dead") {
+      return "muerto";
+    } else {
+      return "desaparecido";
+    }
+  };
+
   useEffect(() => {
     getAllCharacters();
   }, []);
@@ -19,6 +30,9 @@ export const Characters = () => {
             <div>
               <h3>{item.name}</h3>
               <p>
+                <span
+                  className={`status_icon ${getStatusColor(item.status)}`}
+                ></span>
                 {item.status} - {item.species}
               </p>
             </div>
