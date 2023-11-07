@@ -6,6 +6,7 @@ function Footer() {
           <button className="character">CHARACTER</button>
           <button className="locations">LOCATIONS</button>
           <button className="episodes">EPISODES</button>
+          <button className="creador">Creado por MartinezNanu</button>
         </div>
       </div>
     </footer>

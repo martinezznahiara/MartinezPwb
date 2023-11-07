@@ -163,6 +163,7 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
+  opacity: 30%;
 }
 
 .rickAndMorty {
@@ -178,4 +179,21 @@ p {
   z-index: 2;
   padding-bottom: 40px;
   font-size: 300%;
+}
+
+.creador {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.fotito,
+.botones {
+  margin-top: 1%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: space-between;
 }

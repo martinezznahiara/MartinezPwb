@@ -1,8 +1,10 @@
 import { Svgfondo } from "../utilidades/svgfondo";
+import { Svgtop } from "../utilidades/svgtop";
 function Header() {
   return (
     <header>
-      <div className="botonesylogo">
+      <div className="fotito">
+        <Svgtop />
         <div className="botones">
           <a className="dous" href="https://rickandmortyapi.com/documentation">
             Docs
